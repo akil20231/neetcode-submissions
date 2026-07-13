@@ -7,11 +7,9 @@
 
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
-       
-
-        if not preorder: 
+        if not preorder:
             return None
-        
+
         root = TreeNode(preorder[0])
 
         pos = inorder.index(root.val)
